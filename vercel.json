@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "ai-schedule-data",
+  "rewrites": [
+    { "source": "/ai-schedule/:path*", "destination": "/api/[userId]" }
+  ],
+  "env": {
+    "DATA_API_SECRET": "@data_api_secret",
+    "UPSTASH_REDIS_REST_URL": "@upstash_redis_rest_url",
+    "UPSTASH_REDIS_REST_TOKEN": "@upstash_redis_rest_token",
+    "ALLOWED_ORIGINS": "@allowed_origins"
+  }
+}
